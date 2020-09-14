@@ -1,0 +1,14 @@
+@import "../../../sass/index.scss";
+
+.admin-sider {
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 65px;
+  background-color: black;
+
+  .ant-menu-item-selected {
+    background-color: $primary-color !important;
+  }
+}
