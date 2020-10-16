@@ -3,6 +3,7 @@ import "./SignIn.scss";
 import { Layout, Tabs } from "antd";
 import { Redirect } from "react-router-dom";
 import Logo from "../../../assets/img/logo-white-uri.png";
+import RegisterForm from "../../../components/Admin/RegisterForm";
 
 export default function SignIn() {
   const { Content } = Layout;
@@ -15,10 +16,14 @@ export default function SignIn() {
             <img src={Logo} alt="Oriol" />
           </h1>
 
-          <div className='sign-in__content-tabs'>
-            <Tabs type='card'>
-<TabPane tab={<span>Entrar</span>} key='1'>Componente LoginForm</TabPane>
-<TabPane tab={<span>Nuevo Usuario</span>} key='2'>Componente RegisterForm</TabPane>
+          <div className="sign-in__content-tabs">
+            <Tabs type="card">
+              <TabPane tab={<span>Entrar</span>} key="1">
+                Componente LoginForm
+              </TabPane>
+              <TabPane tab={<span>Nuevo Usuario</span>} key="2">
+                <RegisterForm></RegisterForm>
+              </TabPane>
             </Tabs>
           </div>
         </Content>
