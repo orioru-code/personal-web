@@ -1,7 +1,11 @@
-@import "./sass/_variables";
+@import "./sass/index.scss";
 
-.app {
-  h1 {
-    color: $primary-color;
-  }
+.success {
+  border: 1px solid $succes;
+  background-color: $background-success;
+}
+
+.error {
+  border: 1px solid $error;
+  background-color: $bqackground-error;
 }

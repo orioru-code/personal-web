@@ -18,7 +18,7 @@ function App() {
 
 function RouteWithSubs(route) {
   //funcion de sistema de rutas que coge de routes, donde se ha configurado un componente segun el path
-  console.log(route);
+
   return (
     <Route
       path={route.path}

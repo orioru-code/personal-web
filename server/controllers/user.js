@@ -30,7 +30,7 @@ function signUp(req, res) {
           user.save((err, userStored) => {
             //funcion demongoose para guardar user en mongodb
             if (err) {
-              res.status(500).send({ message: err });
+              res.status(500).send({ message: "El usuario ya existe" });
             } else {
               if (!userStored) {
                 res.status(404).send({ message: "Error al crear el usuario" });
